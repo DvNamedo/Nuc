@@ -1,4 +1,4 @@
-package NuclearMod.type;
+package NuclearMod.world.air;
 
 import arc.graphics.*;
 import arc.util.*;
