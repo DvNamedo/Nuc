@@ -1,5 +1,6 @@
 package NuclearMod.core;
 
+import NuclearMod.content.NucContentLoader;
 import arc.Events;
 import arc.util.CommandHandler;
 
