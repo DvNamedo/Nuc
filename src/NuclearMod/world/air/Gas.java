@@ -19,19 +19,32 @@ public class Gas<T extends UnlockableContent> extends UnlockableContent
     public StatusEffect effect;
     //public float greenhouseEffect = 0; // 온실효과
 
-    public UnlockableContent[] chemicalReactions; // 반응 대상
-    public StatusEffect[] chemicalReactionsEffect; // 반응 효과
-    public chemicalReactionsType[] chemicalReactionsType; //반응 유형
-    public float[] chemicalReactionsPower; // 반응 유형시 파워
-    public UnlockableContent[] generatedSubstances; // 생성 물질
+    protected UnlockableContent[] chemicalReactionsObj; // 반응 대상
+    protected StatusEffect[] chemicalReactionsEffect; // 반응 효과
+    protected chemicalReactionsType[] chemicalReactionsType; //반응 유형
+    protected float[] chemicalReactionsPower; // 반응 유형시 파워
+    protected UnlockableContent[] generatedSubstances; // 생성 물질
 
     public Gas(String name, Color color) {
         super(name);
         this.color = new Color(color);
     }
 
+    //자주 쓰일것
+    public Gas(String name){
+        this(name, new Color(0,0,0,0));
+    }
+
+    public void SetChemicalReactions(UnlockableContent[] CRObj, StatusEffect[] chemicalReactionsEffect, chemicalReactionsType[] chemicalReactionsType, float[] chemicalReactionsPower, UnlockableContent[] generatedSubstances){
+        this.chemicalReactionsObj = CRObj;
+        this.chemicalReactionsEffect = chemicalReactionsEffect;
+        this.chemicalReactionsType = chemicalReactionsType;
+        this.chemicalReactionsPower = chemicalReactionsPower;
+        this.generatedSubstances = generatedSubstances;
+    }
+
     public boolean hasNullArray(){
-        int[] bool = {chemicalReactions.length, chemicalReactionsEffect.length,chemicalReactionsType.length, chemicalReactionsPower.length, generatedSubstances.length};
+        int[] bool = {chemicalReactionsObj.length, chemicalReactionsEffect.length,chemicalReactionsType.length, chemicalReactionsPower.length, generatedSubstances.length};
         return !(bool[0] == bool[1] && bool[2] == bool[3] && bool[4] == bool[0]);
     }
 

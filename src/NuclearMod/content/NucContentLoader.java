@@ -9,7 +9,8 @@ public class NucContentLoader implements ContentList {
     private final ContentList[] contents = {
         new NuclBlocks(),
         new NuclItems(),
-        new NuclLiquid()
+        new NuclLiquid(),
+        new Gases()
     };
     
     @Override
