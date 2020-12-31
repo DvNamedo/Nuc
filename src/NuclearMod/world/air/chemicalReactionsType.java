@@ -1,15 +1,8 @@
 package NuclearMod.world.air;
 
 public enum chemicalReactionsType {
-    sBomb,
-    Bomb,
-    bBomb,
-    sFlame,
+    explosion,
     flame,
-    bFlame,
-    sShockWave,
-    ShockWave,
-    bShockWave,
-
-
+    getPower,
+    shockWave
 }
