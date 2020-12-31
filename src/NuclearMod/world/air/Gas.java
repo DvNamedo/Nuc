@@ -26,7 +26,7 @@ public class Gas<T extends UnlockableContent>
     public UnlockableContent[] generatedSubstances; // 생성 물질
 
     public Gas(String name, Color color) {
-        this(name);
+        super(name);
     }
 
     public boolean hasNullArray(){
