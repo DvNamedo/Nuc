@@ -7,7 +7,7 @@ import mindustry.ctype.*;
 import mindustry.type.StatusEffect;
 import mindustry.world.meta.*;
 
-public class Gas<T extends UnlockableContent>
+public class Gas<T extends UnlockableContent> extends UnlockableContent
 {
     // 기체 색
     // 바 색
@@ -27,6 +27,7 @@ public class Gas<T extends UnlockableContent>
 
     public Gas(String name, Color color) {
         super(name);
+        this.color = new Color(color);
     }
 
     public boolean hasNullArray(){
@@ -34,11 +35,16 @@ public class Gas<T extends UnlockableContent>
         return !(bool[0] == bool[1] && bool[2] == bool[3] && bool[4] == bool[0]);
     }
 
+    public Color BarColor(){
+        return barColor == null ? color : barColor;
+    }
 
+    @Override
     public String toString(){
         return localizedName;
     }
 
+    @Override
     public ContentType getContentType(){
         return ContentType.liquid;
     }
