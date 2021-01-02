@@ -6,6 +6,8 @@ import arc.graphics.*;
 import mindustry.type.*;
 import arc.math.*;
 
+import static NuclearMod.Vars.*;
+
 public class Gases implements ContentList {
     public static Gas
     //Single element

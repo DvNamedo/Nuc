@@ -1,5 +1,6 @@
 package NuclearMod.world.air;
 
+import NuclearMod.content.Gases;
 import mindustry.content.*;
 
 public class GasStack {
@@ -9,6 +10,18 @@ public class GasStack {
     public GasStack(Gas gas, float amount){
         this.gas = gas;
         this.amount = amount;
+    }
+
+    protected GasStack(){
+        gas = Gases.hydrogen;
+    }
+
+    @Override
+    public String toString(){
+        return "GasStack{" +
+                "gas=" + gas +
+                ",amount=" + amount +
+                '}';
     }
 
 

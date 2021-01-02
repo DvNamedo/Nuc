@@ -7,7 +7,7 @@ import mindustry.ctype.*;
 import mindustry.type.StatusEffect;
 import mindustry.world.meta.*;
 
-public class Gas<T extends UnlockableContent> extends UnlockableContent
+public class Gas extends UnlockableContent
 {
     // 기체 색
     // 바 색
