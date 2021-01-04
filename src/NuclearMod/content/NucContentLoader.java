@@ -5,13 +5,12 @@ package NuclearMod.content;
 
 import NuclearMod.world.air.Gas;
 import arc.struct.Seq;
+import mindustry.core.ContentLoader;
 import mindustry.ctype.Content;
 import mindustry.ctype.ContentList;
 import mindustry.ctype.ContentType;
 
-import static NuclearMod.Vars.*;
-
-public class NucContentLoader implements ContentList {
+public class NucContentLoader extends ContentLoader implements ContentList {
     private Seq<Content>[] contentMap = new Seq[ContentType.all.length];
     private final ContentList[] contents = {
         new NuclBlocks(),
@@ -27,11 +26,9 @@ public class NucContentLoader implements ContentList {
         }
     }
 
-    public <T extends Content> Seq<T> getBy(ContentType type){
-        return (Seq<T>)contentMap[type.ordinal()];
-    }
-
-    public Seq<Gas> gases(){
+    public Seq<Gas> gases()
+    {
         return getBy(ContentType.liquid);
     }
+    public Gas gas(int id){ return getByID(ContentType.liquid, id); }
 }

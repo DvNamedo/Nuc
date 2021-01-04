@@ -3,10 +3,6 @@ package NuclearMod.content;
 import NuclearMod.world.air.Gas;
 import mindustry.ctype.*;
 import arc.graphics.*;
-import mindustry.type.*;
-import arc.math.*;
-
-import static NuclearMod.Vars.*;
 
 public class Gases implements ContentList {
     public static Gas

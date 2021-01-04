@@ -6,8 +6,9 @@ import mindustry.core.Version;
 import mindustry.gen.Groups;
 
 
-public class Vars implements Loadable
+public class NucVars implements Loadable
 {
+    public float test;
     public static NucContentLoader NucContent;
 
     public static void init(){
