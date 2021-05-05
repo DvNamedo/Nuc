@@ -6,6 +6,7 @@ import arc.graphics.g2d.*;
 import arc.struct.*;
 import mindustry.*;
 import mindustry.content.Blocks;
+import mindustry.core.World;
 import mindustry.ctype.*;
 import mindustry.entities.bullet.*;
 import mindustry.gen.*;
@@ -35,6 +36,7 @@ import static mindustry.type.ItemStack.with;
 
 public class NuclBlocks extends Blocks implements ContentList
 {
+
     public static Block
 
     //Mindustry Content
@@ -80,6 +82,7 @@ public class NuclBlocks extends Blocks implements ContentList
     @Override
     public void load()
     {
+
         //Override
         rtgGenerator.health = 1;
 

@@ -1,6 +1,6 @@
-// 빌드 하는법 How to build
-//C:\Users\PC\Desktop\NuclearJavaMod> 에다가
-// gradlew.bat jar 쓰기
+// How to build
+//C:\Users\PC\Desktop\NuclearJavaMod>
+// write the "gradlew.bat jar"
 package NuclearMod.content;
 
 import NuclearMod.world.air.Gas;

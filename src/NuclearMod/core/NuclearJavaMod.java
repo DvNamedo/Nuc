@@ -16,7 +16,6 @@ public class NuclearJavaMod extends Mod {
         Events.on(ClientLoadEvent.class, e -> {
             // 클라이언트 로드 이벤트
             new Updater().checkUpdate(); // 업데이트 메소드
-            new NucContentLoader().load(); // 컨텐츠 로딩
         });
 
         Events.on(WorldLoadEvent.class, e -> {
@@ -33,6 +32,7 @@ public class NuclearJavaMod extends Mod {
 
     @Override
     public void loadContent(){
+        new NucContentLoader().load(); // 컨텐츠 로딩
         // 컨텐트 로딩 이벤트
         // 여기에 컨텐트 추가 메소드들을 집어넣을 경우 대부분 패키지에 모드명이 붙으니
         // 가급적이면 클라 로드 이벤트에 추가하는 걸 추천

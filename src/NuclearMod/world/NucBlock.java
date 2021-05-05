@@ -4,6 +4,7 @@ import mindustry.world.*;
 
 public class NucBlock extends Block {
 
+
     public boolean hasGases;
     public boolean outputsGas = false;
 

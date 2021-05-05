@@ -18,5 +18,6 @@ public class Gases implements ContentList {
         hydrogen = new Gas("hydrogen"){{
             barColor = new Color(255,60,2);
         }};
+
     }
 }
