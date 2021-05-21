@@ -19,5 +19,9 @@ public class Gases implements ContentList {
             barColor = new Color(255,60,2);
         }};
 
+        helium = new Gas("helium"){{
+            barColor = new Color(255,90,2);
+        }};
+
     }
 }
